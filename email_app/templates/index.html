@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>AI-Mail Assistant</title>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            keyframes: {
+                wave: {
+                  '0%': { transform: 'rotate(0deg)' },
+                  '25%': { transform: 'rotate(-10deg)' },
+                  '50%': { transform: 'rotate(10deg)' },
+                  '75%': { transform: 'rotate(-10deg)' },
+                  '100%': { transform: 'rotate(0deg)' },
+                },
+            },
+            animation: {
+              wave: 'wave 2s ease-in-out infinite',
+            },
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body class="bg-blue-100 min-h-screen flex flex-col items-center">
+
+    <header class="w-full bg-blue-200 p-4  flex justify-between items-center">
+      <h1 class="text-xl font-bold">AI-Mail Assistant</h1>
+      {% if session %}
+      <a href="/history" class="text-blue-700 hover:underline">History</a>
+      {% endif %}
+    </header>
+
+    <main class="w-full max-w-3xl bg-white p-6 mt-4 rounded shadow-md">
+      {% if session %}
+      
+      <!--<pre>{{ pretty }}</pre> >-->
+
+      
+   
+        <section class="mb-6">
+          <h1 class="text-2xl font-semibold pb-2">Welcome, {{ session.userinfo.name }}!</h1>
+           <a href="{% url 'logout' %}" class="relative inline-block px-4 py-2 font-medium group">
+              <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+              <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+              <span class="relative text-black group-hover:text-white">LogOut</span>
+          </a>
+        </section>
+
+        <section class="mb-6 pt-8">
+          <h2 class="text-xl font-semibold pb-2">Rephrase Text</h2>
+
+
+          <!-- Form Start -->
+          <form method="post" class="space-y-6">
+            {% csrf_token %}
+        
+            <!-- Custom rendering of textarea qsLogoutBtn-->
+            <div class="space-y-2">
+                <label for="id_text_to_rephrase" class="text-lg font-medium text-gray-700">Enter text to convert into a professional email:</label>
+                <textarea name="text_to_rephrase" id="id_text_to_rephrase" 
+                          class="w-full p-4 h-40 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                          placeholder="Enter your text here..."></textarea>
+            </div>
+        
+            <!-- Submit Button -->
+            <div class="flex justify-center">
+                <button type="submit" class="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-600 transition-all duration-200">Rephrase</button>
+            </div>
+        </form>
+          <!-- Form End -->
+
+          {% if rephrased_text %}
+            <div class="mt-6 max-w-3xl  max-w-full">
+              <h3 class="text-lg font-medium">Rephrased Text</h3>
+              <pre class="bg-gray-100 p-4 rounded overflow-auto">{{ rephrased_text | linebreaks }}</pre>
+            </div>
+          {% endif %}
+        </section>
+
+      {% else %}
+        <section>
+          <div class="flex items-center justify-center text-center">
+            <span class="text-5xl font-semibold">Welcome to AI Mail Assistant</span>
+            <span class="animate-wave ml-2 text-7xl">👋</span>
+          </div>
+
+          <p class="text-2xl pt-10 pb-8">
+            Our platform is equipped with advanced algorithms to ensure a seamless experience, 
+            allowing you to focus on what matters most. 
+            Whether you're managing work-related emails or personal communications, 
+            AI Mail Assistant offers the support you need to stay on top of your tasks with ease.
+          </p>
+
+          <p>You are not logged in.</p>
+          <a href="{% url 'login' %}" class="relative inline-block px-4 py-2 font-medium group">
+              <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+              <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+              <span class="relative text-black group-hover:text-white">Login</span>
+          </a>
+        </section>
+      {% endif %}
+    </main>
+    
+    <footer class="w-full bg-blue-200 p-4 text-center mt-auto">
+      <p class="text-sm">&copy; 2024 Miranda Casan</p>
+    </footer>
+
+  </body>
+</html>
