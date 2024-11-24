@@ -57,30 +57,47 @@ ai_email_assistant/
 ```
 ## Demo
 
-### Home Page  
-**Description**: A clean and intuitive interface for users to start their email creation journey.  
-**Screenshot**:  
-![Home Page](link_to_home_page_image)
-![wave-login](https://github.com/user-attachments/assets/23fa8acc-9552-4cd5-830b-43d1b55eed97)
+
+
+
+
+
 
 ---
 
 ### Login Page  
 **Description**: Secure login with Google or email authentication, featuring a dynamic wave effect.  
 **Screenshot**:  
-![image](https://github.com/user-attachments/assets/6de590e3-1237-4669-bf39-aa84265817a2)
+<img src="https://github.com/user-attachments/assets/28ab5c14-41bf-4a9d-9b27-58ec31696720" alt="Screenshot 1" width="35%">
+
+---
+### Home Page  
+**Description**: A clean and intuitive interface for users to start their email creation journey.  
+**Screenshot**:  
+
+<img src="https://github.com/user-attachments/assets/629485fd-e2a4-4b71-b166-537ff5a578ba" alt="Screen" width="45%">
 
 ---
 
 ### AI Rephrasing Interface  
 **Description**: Enter plain text, and the assistant transforms it into a professional email.  
 **Screenshot**:  
-![Rephrasing Interface](link_to_rephrasing_interface_image)
+<img src="https://github.com/user-attachments/assets/6d17f0fd-f769-4899-a9bc-d97f62eec706" alt="Screenshot 2" width="50%">
+
 
 ---
 
 ### History Page  
 **Description**: A detailed log of past rephrased emails with timestamps for easy reference.  
 **Screenshot**:  
-![History Page](link_to_history_page_image)
+
+
+<div style="display: flex; align-items: center; justify-content: space-around;">
+  <img src="https://github.com/user-attachments/assets/4f81056d-ba1e-4c75-957b-3e449e5a590c" alt="Screenshot 3" width="45%">
+  <img src="https://github.com/user-attachments/assets/42308350-b45a-4567-b593-b594569002fb" alt="Screenshot 2024-11-24 014054" width="40%">
+</div>
+
+
+
+
 
