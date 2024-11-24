@@ -6,6 +6,10 @@ AI-Email assistant, is a web application built with Django that helps users in w
   2. [Tech Stack](#tech-stack)
   3. [Project Structure](#project-structure)
   4. [Demo](#demo)
+  5. [Installation](#installation)
+  6. [Usage](#usage)
+  7. [Contributing](#contributing)
+  8. [License](#license)
 
 ## Features
 - **User Authentication**: Secure login using Auth0, with Google and email-based authentication.
