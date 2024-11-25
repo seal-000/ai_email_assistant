@@ -63,12 +63,6 @@ ai_email_assistant/
 
 
 
-
-
-
-
----
-
 ### Login Page  
 **Description**: Secure login with Google or email authentication.  
 **Screenshot**:  
@@ -102,6 +96,66 @@ ai_email_assistant/
 </div>
 
 
+
+## Installation
+
+### Prerequisites
+- Python 3.8+
+- PostgreSQL
+- A registered Auth0 account
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/seal-000/ai_email_assistant.git
+   cd ai-mail-assistant
+   ```
+2. Set up a virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+3. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Configure environment variables: Create a ```.env``` file with the following:
+   ```bash
+   AUTH0_CLIENT_ID=your-auth0-client-id
+   AUTH0_CLIENT_SECRET=your-auth0-client-secret
+   AUTH0_DOMAIN=your-auth0-domain
+   DATABASE_URL=your-database-url
+   ```
+
+5. Run database migrations:
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+   
+6. Start the development server:
+   ```bash
+   python manage.py runserver 3000
+   ```
+   
+
+## Usage
+
+
+### Login and Session
+
+1. Navigate to the home page (```/```).
+2. Login using Google or email credentials via Auth0.
+
+### Rephrase Emails
+
+1. After login in, use the form to input text.
+2. Submit the form to get a professionally rephrased email.
+
+
+### View History 
+
+1. Access ```/history``` to review previously rephrased emails along with original text and timestamps.
 
 
 
