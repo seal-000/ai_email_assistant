@@ -121,10 +121,18 @@ ai_email_assistant/
    ```
 4. Configure environment variables: Create a ```.env``` file with the following:
    ```bash
+   
    AUTH0_CLIENT_ID=your-auth0-client-id
    AUTH0_CLIENT_SECRET=your-auth0-client-secret
    AUTH0_DOMAIN=your-auth0-domain
-   DATABASE_URL=your-database-url
+
+   DB_NAME=your-database-name
+   DB_PASSWORD=your-database-password
+   DB_HOST=your-database-host
+   DB_PORT=your-database-port
+
+   HUGGING_FACE_API_KEY=your-hugging-face-key
+   
    ```
 
 5. Run database migrations:
