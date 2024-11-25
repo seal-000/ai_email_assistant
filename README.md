@@ -155,7 +155,7 @@ ai_email_assistant/
 
 ### View History 
 
-1. Access ```/history``` to review previously rephrased emails along with original text and timestamps.
+1. Access ```/history``` to review previously rephrased text along with original text and timestamps.
 
 
 
