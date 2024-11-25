@@ -70,13 +70,13 @@ ai_email_assistant/
 ---
 
 ### Login Page  
-**Description**: Secure login with Google or email authentication, featuring a dynamic wave effect.  
+**Description**: Secure login with Google or email authentication.  
 **Screenshot**:  
 <img src="https://github.com/user-attachments/assets/28ab5c14-41bf-4a9d-9b27-58ec31696720" alt="Screenshot 1" width="35%">
 
 ---
 ### Home Page  
-**Description**: A clean and intuitive interface for users to start their email creation journey.  
+**Description**: A clean and intuitive interface for users to start their email creation journey, featuring a dynamic wave effect.  
 **Screenshot**:  
 
 <img src="https://github.com/user-attachments/assets/629485fd-e2a4-4b71-b166-537ff5a578ba" alt="Screen" width="45%">
