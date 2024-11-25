@@ -158,7 +158,7 @@ ai_email_assistant/
 ### Rephrase Emails
 
 1. After login in, use the form to input text.
-2. Submit the form to get a professionally rephrased email.
+2. Submit the form to get a professionally rephrased text.
 
 
 ### View History 
