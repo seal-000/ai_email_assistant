@@ -181,4 +181,7 @@ git checkout -b feature-name
 ## License
 This project is licensed under the MIT License. See the ```LICENSE``` file for details.
 
+![MIT License](https://img.shields.io/badge/License-MIT-green.svg)
+
+
 
