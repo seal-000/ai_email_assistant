@@ -86,7 +86,7 @@ ai_email_assistant/
 ---
 
 ### History Page  
-**Description**: A detailed log of past rephrased emails with timestamps for easy reference.  
+**Description**: A detailed log of past rephrased texts with timestamps for easy reference.  
 **Screenshot**:  
 
 
