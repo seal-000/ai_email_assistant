@@ -166,4 +166,19 @@ ai_email_assistant/
 1. Access ```/history``` to review previously rephrased text along with original text and timestamps.
 
 
+## Contributing
+
+Contributions are welcome!
+1. Fork the repository.
+2. Create a new feature branch:
+```bash
+git checkout -b feature-name
+```
+3. Commit your changes and push to your fork.
+4. Submit a pull request with a detailed explanation of your changes.
+
+
+## License
+This project is licensed under the MIT License. See the ```LICENSE``` file for details.
+
 
